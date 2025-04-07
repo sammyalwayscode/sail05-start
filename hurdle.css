@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: poppins;
+}
+
+.container {
+  background-color: #674bb1;
+  background-image: url("./assets/bg-desktop.svg");
+  min-height: 100vh;
+  padding: 0 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  height: 150px;
+}
+
+.navagations {
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: all 350ms;
+  }
+  a:hover {
+    color: hotpink;
+    font-size: 18px;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero_image {
+  img {
+    width: 650px;
+  }
+}
+
+.hero_texts {
+  /* background-color: red; */
+  max-width: 500px;
+  color: white;
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+    font-family: poppins;
+    transition: all 350ms;
+  }
+
+  button:hover {
+    background-color: hotpink;
+    color: white;
+  }
+}
