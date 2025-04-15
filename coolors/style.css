@@ -1,0 +1,150 @@
+body {
+  font-family: poppins;
+  margin: 0;
+}
+
+button {
+  font-family: poppins;
+}
+
+header {
+  display: flex;
+  height: 60px;
+  /* background-color: red; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.headerNavs {
+  display: flex;
+  align-items: center;
+
+  nav {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 350ms;
+  }
+
+  nav:hover {
+    color: #005ce6;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    background-color: #005ce6;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 350ms;
+  }
+
+  button:hover {
+    background-color: #004ec3;
+  }
+
+  hr {
+    height: 30px;
+    border: 0.5px solid rgb(197, 197, 197);
+  }
+}
+
+.headerLogo {
+  /* background-color: green; */
+}
+
+.sideMenu {
+  display: none;
+  img {
+    width: 40px;
+  }
+}
+
+.heroImage {
+  width: 500px;
+  border: 10px solid black;
+  height: 400px;
+  border-radius: 6px;
+
+  img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.heroContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.heroText {
+  max-width: 550px;
+  text-align: center;
+  /* background-color: green; */
+  h1 {
+    font-size: 70px;
+    line-height: 1;
+    margin: 0;
+  }
+  p {
+    font-size: 18px;
+    margin: 50px 0;
+  }
+}
+
+.btnHold {
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    height: 45px;
+    width: 265px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: #005ce6;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 500px) {
+  .headerNavs {
+    display: none;
+  }
+
+  .sideMenu {
+    display: block;
+    width: 10%;
+    /* background-color: red; */
+  }
+  .headerLogo {
+    /* background-color: green; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1065px) {
+  .heroContainer {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .heroImage {
+    margin-bottom: 40px;
+  }
+}
